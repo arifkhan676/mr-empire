@@ -1,0 +1,10 @@
+.logo{
+    width: 130px;
+}
+
+ul li{
+    list-style-type:  none; 
+}
+.navbar{
+    display: flex;
+}
