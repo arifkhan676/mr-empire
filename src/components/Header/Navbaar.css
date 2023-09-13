@@ -1,10 +1,14 @@
 .logo{
     width: 130px;
+    margin-left: 73px;
 }
 
-ul li{
-    list-style-type:  none; 
+.navbaar{
+    margin-bottom: -10px;
 }
-.navbar{
-    display: flex;
-}
+@media  (max-width:900px) {
+    .logo{
+        width: 130px;
+        margin-left: 20px;
+    }
+} 
