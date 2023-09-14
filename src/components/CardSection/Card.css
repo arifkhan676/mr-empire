@@ -1,7 +1,11 @@
 .cardGroup{
     margin: 80px;
+    margin-left: 20%;
 }
 h1{
-    margin-top: 5%;
-    letter-spacing: 15px;
+    padding-top: 50px;
+    letter-spacing: 18px;
+}
+.mr-empire{
+    text-align: center;
 }
