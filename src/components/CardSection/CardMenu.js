@@ -17,6 +17,7 @@ const CardMenu = () => {
     return (
         <div className='mr-empire' >
             <h1> MR - EMPIRE </h1>
+            <hr />
             <CardGroup className='cardGroup' >
                 {cardData1}
             </CardGroup>

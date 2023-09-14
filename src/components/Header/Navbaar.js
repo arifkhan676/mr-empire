@@ -12,10 +12,10 @@ import { NavLink } from 'react-router-dom';
 
 function Navbaar() {
     return (
-        <div className='navbaar'>
+        <div className='navbaar' >
             <>
                 {['sm'].map((expand) => (
-                    <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+                    <Navbar key={expand} expand={expand} className="mb-2"  >
                         <Container fluid>
                             <Navbar.Brand href="#">  <NavLink to='/'>  <img className='logo' src={brand} alt="" />  </NavLink></Navbar.Brand>
                             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${!expand}`} />
