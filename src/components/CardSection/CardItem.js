@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 const CardItem = (props) => {
+
+    const [btn, setBtn] = useState(true);
 
     const { id, src, title, description } = props.item;
 
@@ -17,7 +19,8 @@ const CardItem = (props) => {
                     <Card.Text>
                         {description}
                     </Card.Text>
-                    <Link to={`/Product/${id}`} >   <Button variant="primary"> See Design  </Button></Link>
+
+                    <Link to={`/Product/${id}`} onClick={() => { setBtn(!btn) }} >   <Button variant="primary"  > {btn === true ? 'See Design' : 'Call for order'}   </Button></Link>
                 </Card.Body>
             </Card>
         </div>
